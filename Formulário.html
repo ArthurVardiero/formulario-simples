@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title> Formulário de Cadastro</title>
+        <link rel="stylesheet" href="template.css">
+    </head>
+    <body>
+        <form>
+            <h1> Formulário de Cadastro</h1>
+            <h2> Digite os dados para cadastro:</h2>
+            <label>
+                <strong> Nome completo:</strong><br>
+                <input type="text" name="usuario" pattern="" required/>
+            </label>
+            <label>
+                <strong> Data de nascimento:</strong><br>
+                <input type="date" max="2022-11-17" required/>
+            </label>
+            <label>
+                <strong> CPF:</strong><br>
+                <input type="text" name="cpf" pattern="" maxlength="11" required/>
+            </label>
+            <label> 
+                <strong>Número de telefone:</strong><br>
+                <input type="tel" name="tell" pattern="" maxlength="11" required/>
+            </label>
+            <label> 
+                <strong>Endereço:</strong><br>
+                <input type="text" name="address" pattern="" required/>
+            </label>
+            <label> 
+                <strong> Sexo:</strong>
+                <select name="sexos">
+                    <option value="m"> Masculino</option>
+                    <option value="f"> Feminino</option>
+                </select>
+            </label>
+            <label> 
+                <strong>E-Mail:</strong><br>
+                <input type="text" name="email" pattern="" required/>
+            </label>
+            <label>
+                <strong>Descrição do candidato:</strong><br>
+                <textarea name="descriao"></textarea>
+            </label>
+            <label> 
+                <strong>Foto:</strong>
+                <input type="file" name="photo" accept="image/*"/>
+            </label><br>
+            <button name="button"><strong> Cadastro</strong></button>
+        </form>       
+    </body>
+</html>
